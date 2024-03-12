@@ -7,18 +7,11 @@ public class GoldController : MonoBehaviour
 {
         [SerializeField]
     TMP_Text GuldText;
-    [SerializeField]
-    int gold;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int Gold;
 
     // Update is called once per frame
     void Update()
     {
-                GuldText.text = "Guld:" + gold;
+                GuldText.text = "Guld:" + Gold;
     }
 }

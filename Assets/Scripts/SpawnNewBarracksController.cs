@@ -6,10 +6,14 @@ public class SpawnNewBarracksController : MonoBehaviour
 {
     [SerializeField]
     GameObject Barracks;
+    public GoldController GoldController2;
 
-
-public void OnSpawn() 
-{
-    Instantiate(Barracks);
-}
+    public void OnSpawn()
+    {
+        if (GoldController2.Gold >= 15)
+        {
+            GoldController2.Gold = GoldController2.Gold - 15;
+            Instantiate(Barracks);
+        }
+    }
 }

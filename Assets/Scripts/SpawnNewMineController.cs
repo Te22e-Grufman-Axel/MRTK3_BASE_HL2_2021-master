@@ -7,12 +7,15 @@ public class SpawnNewMineController : MonoBehaviour
 {
     [SerializeField]
     GameObject GoldMiner;
-    [SerializeField]
-    int Gold;
+    public GoldController GoldController2;
 
 
     public void OnSpawn()
     {
+        if (GoldController2.Gold >= 10)
+        {
+            GoldController2.Gold = GoldController2.Gold - 10;
             Instantiate(GoldMiner);
+        }
     }
 }

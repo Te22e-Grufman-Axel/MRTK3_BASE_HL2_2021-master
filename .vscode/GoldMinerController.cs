@@ -10,8 +10,6 @@ public class GoldMinerController : MonoBehaviour
 
     float timer = 0;
 
-  public GoldController GoldController2;
-
     void Awake() {
     Vector3 pos = new Vector3(PlatePos.x,PlatePos.y,PlatePos.z);
 
@@ -25,7 +23,7 @@ public class GoldMinerController : MonoBehaviour
 
         if(timer > 2)
         {
-      GoldController2.Gold++;
+            
             timer = 0;
         }
 

@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GuldText: {fileID: 731765522}
-  gold: 0
+  Gold: 0
 --- !u!4 &686579357
 Transform:
   m_ObjectHideFlags: 0
@@ -1801,6 +1801,14 @@ PrefabInstance:
       propertyPath: GuldText
       value: 
       objectReference: {fileID: 731765522}
+    - target: {fileID: 8591578628234876327, guid: 11bba387feb375944bdcb361f4bab09c, type: 3}
+      propertyPath: goldController
+      value: 
+      objectReference: {fileID: 686579356}
+    - target: {fileID: 8591578628234876327, guid: 11bba387feb375944bdcb361f4bab09c, type: 3}
+      propertyPath: GoldController2
+      value: 
+      objectReference: {fileID: 686579356}
     - target: {fileID: 9150333442246110173, guid: 11bba387feb375944bdcb361f4bab09c, type: 3}
       propertyPath: m_Name
       value: GoldMiner
