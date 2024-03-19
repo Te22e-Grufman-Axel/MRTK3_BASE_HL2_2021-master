@@ -114,9 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d6ad7619057ab4ebb4c495deba10c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GuldText: {fileID: 0}
-  gold: 0
   PlatePos: {x: 0, y: 0, z: 0}
+  GoldController2: {fileID: 0}
 --- !u!54 &7735162698359646976
 Rigidbody:
   m_ObjectHideFlags: 0

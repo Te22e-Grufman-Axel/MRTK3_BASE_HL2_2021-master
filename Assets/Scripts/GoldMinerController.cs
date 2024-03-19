@@ -13,7 +13,7 @@ public class GoldMinerController : MonoBehaviour
   public GoldController GoldController2;
 
     void Awake() {
-    Vector3 pos = new Vector3(PlatePos.x,PlatePos.y,PlatePos.z);
+    Vector3 pos = new Vector3(PlatePos.x,PlatePos.y+1,PlatePos.z);
 
     transform.position = pos;    
     }

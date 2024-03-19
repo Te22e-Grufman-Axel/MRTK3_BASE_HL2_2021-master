@@ -1,46 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MickeController : MonoBehaviour
 {
   UnityEngine.AI.NavMeshAgent Micke;
-  NavMeshPath navMeshPath = new NavMeshPath();
+  NavMeshPath navMeshPath;
 
   [SerializeField]
   GameObject target1;
-    [SerializeField]
+  [SerializeField]
   GameObject target2;
-    [SerializeField]
+  [SerializeField]
   GameObject target3;
-    [SerializeField]
+  [SerializeField]
   GameObject target4;
-    [SerializeField]
+  [SerializeField]
   GameObject target5;
 
   void Awake()
   {
+    navMeshPath = new NavMeshPath();
     Micke = GetComponent<UnityEngine.AI.NavMeshAgent>();
   }
   void Update()
   {
     // Micke.destination = target1.transform.position;
-if (Micke.CalculatePath(Micke, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete)
-{
+    if (Micke.CalculatePath(target1.transform.position, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete)
+    {
       //move to target
       Micke.SetPath(navMeshPath);
-}
+    }
+    else if (Micke.CalculatePath(target2.transform.position, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete)
+    {
+      //move to target
+      Micke.SetPath(navMeshPath);
+    }
+    else if (Micke.CalculatePath(target3.transform.position, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete)
+    {
+      //move to target
+      Micke.SetPath(navMeshPath);
+    }
+    else if (Micke.CalculatePath(target4.transform.position, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete)
+    {
+      //move to target
+      Micke.SetPath(navMeshPath);
+      if (Micke.CalculatePath(target5.transform.position, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete)
+      {
+        //move to target
+        Micke.SetPath(navMeshPath);
+      }
+    }
+    else
+    {
+      print("WTF");
+    }
   }
 }
 
 
 
 
-//create path and check if it can be done
-// and check if navMeshAgent can reach its target
-if (navMeshAgent.CalculatePath(Target, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete)
-{
-      //move to target
-      navMeshAgent.SetPath(navMeshPath);
-}
+
 
