@@ -18,11 +18,17 @@ public class MickeController : MonoBehaviour
   GameObject target4;
   [SerializeField]
   GameObject target5;
+  [SerializeField]
+  Vector3 TowerPos;
+
+  
 
   void Awake()
   {
     navMeshPath = new NavMeshPath();
     Micke = GetComponent<UnityEngine.AI.NavMeshAgent>();
+    Vector3 pos = new Vector3(TowerPos.x +1,TowerPos.y,TowerPos.z);
+    transform.position = pos;
   }
   void Update()
   {
