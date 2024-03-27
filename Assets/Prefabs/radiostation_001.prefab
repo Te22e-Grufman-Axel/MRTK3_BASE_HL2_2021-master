@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f274e175e0161714997d650b56172790, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.31
+      value: -22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f274e175e0161714997d650b56172790, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.953
+      value: -0.53101915
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f274e175e0161714997d650b56172790, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.31
+      value: 0.5498334
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f274e175e0161714997d650b56172790, type: 3}
       propertyPath: m_LocalRotation.w
@@ -42,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f274e175e0161714997d650b56172790, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f274e175e0161714997d650b56172790, type: 3}
       propertyPath: m_LocalRotation.y
@@ -138,7 +138,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -162,8 +162,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.07, y: 0.27088922, z: 0.5934024}
-  m_Center: {x: 0.012265548, y: 0.13925955, z: 0.007973433}
+  m_Size: {x: 2.77, y: 2.9, z: 6.37}
+  m_Center: {x: 0.012265548, y: 1.31, z: 0.007973433}
 --- !u!114 &3476448185496493179
 MonoBehaviour:
   m_ObjectHideFlags: 0

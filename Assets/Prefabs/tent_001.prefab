@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5c3b8786ba873454790a3b3cbc1ebda6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7060001
+      value: -43.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5c3b8786ba873454790a3b3cbc1ebda6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.867
+      value: -0.6170192
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5c3b8786ba873454790a3b3cbc1ebda6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.496
+      value: 0.473
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5c3b8786ba873454790a3b3cbc1ebda6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -88,6 +88,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5c3b8786ba873454790a3b3cbc1ebda6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 362365553093720779}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5c3b8786ba873454790a3b3cbc1ebda6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3642779398624540291}
   m_SourcePrefab: {fileID: 100100000, guid: 5c3b8786ba873454790a3b3cbc1ebda6, type: 3}
 --- !u!4 &571596006117537271 stripped
 Transform:
@@ -121,7 +124,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -145,8 +148,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.69813454, y: 0.35378072, z: 0.92535776}
-  m_Center: {x: -0.000837937, y: 0.16345967, z: -0.04563752}
+  m_Size: {x: 6.82, y: 4.05, z: 8.8}
+  m_Center: {x: -0.000837937, y: 1.64, z: -0.45}
 --- !u!114 &6627862638525723236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,3 +405,16 @@ MonoBehaviour:
       reference: MixedReality.Toolkit.SpatialManipulation.RotateLogic, MixedReality.Toolkit.SpatialManipulation
     scaleLogicType:
       reference: MixedReality.Toolkit.SpatialManipulation.ScaleLogic, MixedReality.Toolkit.SpatialManipulation
+--- !u!114 &3642779398624540291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911247915087474509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a7651c5db5d0447bbf5b8a5a186ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlatePos: {x: 0, y: 0, z: 0}

@@ -19,8 +19,8 @@ public class MickeTowerController : MonoBehaviour
 
     void Update()
     {
-        timeSineLastSpawn = timeSineLastSpawn + Time.deltaTime;
-        LevelTimmer = LevelTimmer + Time.deltaTime;
+        timeSineLastSpawn += 1 * Time.deltaTime;
+        LevelTimmer += 1 * Time.deltaTime;
 
         if (LevelTimmer < 60)
         {
@@ -45,14 +45,14 @@ public class MickeTowerController : MonoBehaviour
                 Instantiate(EnemyPrefab);
                 timeSineLastSpawn = 0;
             }
-            else if (LevelTimmer > 150)
-            {
-                if (timeSineLastSpawn > 1)
-                {
-                    Instantiate(EnemyPrefab);
-                    timeSineLastSpawn = 0;
-                }
 
+        }
+        else if (LevelTimmer > 150)
+        {
+            if (timeSineLastSpawn > 1)
+            {
+                Instantiate(EnemyPrefab);
+                timeSineLastSpawn = 0;
             }
         }
     }
