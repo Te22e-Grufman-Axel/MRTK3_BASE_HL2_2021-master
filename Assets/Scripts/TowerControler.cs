@@ -6,9 +6,12 @@ public class TowerControler : MonoBehaviour
 {
     [SerializeField]
     Vector3 PlatePos;
+        public GameObject Plate;
     void Awake() {
-    Vector3 pos = new Vector3(PlatePos.x,PlatePos.y,PlatePos.z);
-
+      Plate = GameObject.Find("ShopPlate");
+      PlatePos = Plate.transform.position;
+      transform.position = PlatePos;
+    Vector3 pos = new Vector3(PlatePos.x,PlatePos.y,PlatePos.z-3);
     transform.position = pos;    
     }
 

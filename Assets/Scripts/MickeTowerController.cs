@@ -11,12 +11,7 @@ public class MickeTowerController : MonoBehaviour
     float LevelTimmer = 0;
     [SerializeField]
     GameObject EnemyPrefab;
-    void Start()
-    {
-
-    }
-
-
+    
     void Update()
     {
         timeSineLastSpawn += 1 * Time.deltaTime;

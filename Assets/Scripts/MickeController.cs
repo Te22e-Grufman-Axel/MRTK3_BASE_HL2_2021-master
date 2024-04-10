@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using MixedReality.Toolkit;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -21,13 +23,17 @@ public class MickeController : MonoBehaviour
   [SerializeField]
   Vector3 TowerPos;
 
-  
+  public GameObject Tower;
+
+
 
   void Awake()
   {
+    Tower = GameObject.Find("TeamMickeTower");
+    TowerPos = Tower.transform.position;
     navMeshPath = new NavMeshPath();
     Micke = GetComponent<UnityEngine.AI.NavMeshAgent>();
-    Vector3 pos = new Vector3(TowerPos.x +1,TowerPos.y,TowerPos.z);
+    Vector3 pos = new Vector3(TowerPos.x + 1, TowerPos.y, TowerPos.z);
     transform.position = pos;
   }
   void Update()

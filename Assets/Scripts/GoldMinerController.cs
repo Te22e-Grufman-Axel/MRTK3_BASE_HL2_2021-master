@@ -7,14 +7,17 @@ public class GoldMinerController : MonoBehaviour
 {
     [SerializeField]
     Vector3 PlatePos;
+    public GameObject Plate;
 
     float timer = 0;
 
   public GoldController GoldController2;
 
     void Awake() {
-    Vector3 pos = new Vector3(PlatePos.x,PlatePos.y+1,PlatePos.z);
-
+      Plate = GameObject.Find("ShopPlate");
+      PlatePos = Plate.transform.position;
+      transform.position = PlatePos;
+    Vector3 pos = new Vector3(PlatePos.x,PlatePos.y,PlatePos.z-3);
     transform.position = pos;    
     }
 

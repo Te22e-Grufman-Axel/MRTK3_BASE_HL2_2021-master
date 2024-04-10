@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a61145181a5bc94fa4e9766e3fd364e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.508
+      value: 17.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a61145181a5bc94fa4e9766e3fd364e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -418,3 +418,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlatePos: {x: 0, y: 0, z: 0}
+  Plate: {fileID: 0}
