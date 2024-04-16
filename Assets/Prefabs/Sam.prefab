@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c7c9bfedd00d8e946b42d69fa22e14e1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -107.77
+      value: -97.73
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c7c9bfedd00d8e946b42d69fa22e14e1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7c9bfedd00d8e946b42d69fa22e14e1, type: 3}
+      propertyPath: m_TagString
+      value: TeamSam
+      objectReference: {fileID: 0}
     - target: {fileID: 3078023919453430577, guid: c7c9bfedd00d8e946b42d69fa22e14e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.17
@@ -106,6 +110,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c7c9bfedd00d8e946b42d69fa22e14e1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5096310293495401024}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c7c9bfedd00d8e946b42d69fa22e14e1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2646532569930910589}
   m_SourcePrefab: {fileID: 100100000, guid: c7c9bfedd00d8e946b42d69fa22e14e1, type: 3}
 --- !u!1 &646496164896937357 stripped
 GameObject:
@@ -162,3 +169,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 96
   m_CollisionDetection: 0
+--- !u!114 &2646532569930910589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646496164896937357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11500d3f66be4c45af18510f95780ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hp: 100

@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f274e175e0161714997d650b56172790, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22
+      value: -128.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f274e175e0161714997d650b56172790, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.51
+      value: -26.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f274e175e0161714997d650b56172790, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5498334
+      value: -3.7505226
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f274e175e0161714997d650b56172790, type: 3}
       propertyPath: m_LocalRotation.w
@@ -71,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f274e175e0161714997d650b56172790, type: 3}
       propertyPath: m_Name
       value: radiostation_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f274e175e0161714997d650b56172790, type: 3}
+      propertyPath: m_TagString
+      value: TeamSam
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -115,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlatePos: {x: 0, y: 0, z: 0}
+  Plate: {fileID: 0}
   GoldController2: {fileID: 0}
 --- !u!54 &7735162698359646976
 Rigidbody:
