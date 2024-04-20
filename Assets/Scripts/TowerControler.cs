@@ -17,12 +17,6 @@ public class TowerControler : MonoBehaviour
     Vector3 pos = new Vector3(PlatePos.x, PlatePos.y, PlatePos.z - 3);
     transform.position = pos;
   }
-
-  // Update is called once per frame
-  void Update()
-  {
-
-  }
   private void OnTriggerStay(Collider other)
   {
     if (other.gameObject.tag == "TeamMicke")

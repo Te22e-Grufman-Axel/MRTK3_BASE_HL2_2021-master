@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class GoldController : MonoBehaviour
 {
-        [SerializeField]
+    [SerializeField]
     TMP_Text GuldText;
     public int Gold;
 
     // Update is called once per frame
     void Update()
     {
-                GuldText.text = "Guld:" + Gold;
+     GuldText.text = "Guld:" + Gold;
     }
 }

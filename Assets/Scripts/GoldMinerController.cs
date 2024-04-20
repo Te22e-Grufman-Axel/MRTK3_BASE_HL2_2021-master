@@ -23,15 +23,11 @@ public class GoldMinerController : MonoBehaviour
 
     void Update()
     {
-
-        timer += Time.deltaTime;
-
-        if(timer > 2)
-        {
+     timer += Time.deltaTime;
+     if(timer > 2)
+     {
       GoldController2.Gold++;
-            timer = 0;
-        }
-
-
+      timer = 0;
+     }
     }
 }

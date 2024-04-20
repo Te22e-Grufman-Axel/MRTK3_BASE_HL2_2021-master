@@ -26,7 +26,6 @@ public class MickeController : MonoBehaviour
   public GameObject Tower;
 
 
-
   void Awake()
   {
     Tower = GameObject.Find("TeamMickeTower");
@@ -38,7 +37,6 @@ public class MickeController : MonoBehaviour
   }
   void Update()
   {
-    // Micke.destination = target1.transform.position;
     if (Micke.CalculatePath(target1.transform.position, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete)
     {
       //move to target
@@ -58,15 +56,15 @@ public class MickeController : MonoBehaviour
     {
       //move to target
       Micke.SetPath(navMeshPath);
-      if (Micke.CalculatePath(target5.transform.position, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete)
-      {
-        //move to target
-        Micke.SetPath(navMeshPath);
-      }
+    }
+    else if (Micke.CalculatePath(target5.transform.position, navMeshPath) && navMeshPath.status == NavMeshPathStatus.PathComplete)
+    {
+      //move to target
+      Micke.SetPath(navMeshPath);
     }
     else
     {
-      print("WTF");
+      print("Cant reatch anything");
     }
   }
 }
